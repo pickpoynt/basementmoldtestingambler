@@ -2,7 +2,7 @@ import Header from "@/components/landing/Header";
 import Hero from "@/components/landing/Hero";
 import Services from "@/components/landing/Services";
 import WhyUs from "@/components/landing/WhyUs";
-import ClayPipeInfo from "@/components/landing/ClayPipeInfo";
+import SumpPumpInfo from "@/components/landing/SumpPumpInfo";
 import FAQ from "@/components/landing/FAQ";
 import Contact from "@/components/landing/Contact";
 import Footer from "@/components/landing/Footer";
@@ -15,38 +15,38 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Clay pipe replacement St. Louis MO | St. Louis Sewer Experts: Trenchless & Main Line Specialists</title>
-        <meta name="description" content="Clay pipe replacement St. Louis MO. Professional trenchless sewer repair, main line replacement, and root intrusion solutions. Licensed St. Louis plumbers serving the metro area. Call (877) 792-1410 for a free estimate!" />
-        <meta name="keywords" content="Clay pipe replacement St. Louis MO, sewer line replacement St. Louis, trenchless sewer repair STL, clay tile pipe removal St. Louis, St. Louis main line repair" />
-        <link rel="canonical" href="https://stlouis-clay-pipe.com/" />
+        <title>Sump pump replacement Peoria IL | Peoria Pump Pros: Emergency Flooding Solutions</title>
+        <meta name="description" content="Sump pump replacement Peoria IL. Professional basement waterproofing, battery backup installation, and primary pump replacement. 24/7 emergency flood prevention in Peoria. Call (877) 792-1410 today!" />
+        <meta name="keywords" content="Sump pump replacement Peoria IL, basement flood protection Peoria, battery backup sump pump Peoria, Peoria IL plumbing emergency, submersible pump repair Peoria" />
+        <link rel="canonical" href="https://peoria-sump-pump.com/" />
 
         {/* JSON-LD schema for LocalBusiness */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            "name": "St. Louis Sewer Experts",
-            "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80",
+            "name": "Peoria Pump Pros",
+            "image": "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&q=80",
             "telephone": "+1-877-792-1410",
             "address": {
               "@type": "PostalAddress",
-              "addressLocality": "St. Louis",
-              "addressRegion": "MO",
-              "postalCode": "63101",
+              "addressLocality": "Peoria",
+              "addressRegion": "IL",
+              "postalCode": "61602",
               "addressCountry": "US"
             },
             "geo": {
               "@type": "GeoCoordinates",
-              "latitude": "38.6270",
-              "longitude": "-90.1994"
+              "latitude": "40.6936",
+              "longitude": "-89.5890"
             },
             "openingHours": "Mo-Su 00:00-23:59",
             "serviceArea": {
               "@type": "Place",
-              "name": "St. Louis, Missouri"
+              "name": "Peoria, Illinois"
             },
             "priceRange": "$$$",
-            "description": "Professional clay pipe replacement and trenchless sewer repair services in St. Louis, MO. We specialize in non-invasive main line restoration for historic St. Louis homes."
+            "description": "Professional sump pump replacement and basement waterproofing services in Peoria, IL. We specialize in high-capacity submersible pumps and reliable battery backup systems."
           })}
         </script>
 
@@ -55,46 +55,46 @@ const Index = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Service",
-            "serviceType": "Clay Pipe Replacement",
+            "serviceType": "Sump Pump Replacement",
             "provider": {
               "@type": "LocalBusiness",
-              "name": "St. Louis Sewer Experts",
+              "name": "Peoria Pump Pros",
               "telephone": "+1-877-792-1410"
             },
             "areaServed": {
               "@type": "Place",
-              "name": "St. Louis, Missouri"
+              "name": "Peoria, Illinois"
             },
             "hasOfferCatalog": {
               "@type": "OfferCatalog",
-              "name": "Sewer Services",
+              "name": "Sump Pump Services",
               "itemListElement": [
                 {
                   "@type": "Offer",
                   "itemOffered": {
                     "@type": "Service",
-                    "name": "Trenchless Sewer Repair"
+                    "name": "Primary Sump Pump Replacement"
                   }
                 },
                 {
                   "@type": "Offer",
                   "itemOffered": {
                     "@type": "Service",
-                    "name": "Sewer Main Line Replacement"
+                    "name": "Battery Backup Installation"
                   }
                 },
                 {
                   "@type": "Offer",
                   "itemOffered": {
                     "@type": "Service",
-                    "name": "Root Intrusion Removal"
+                    "name": "Basement Flood Protection"
                   }
                 },
                 {
                   "@type": "Offer",
                   "itemOffered": {
                     "@type": "Service",
-                    "name": "Video Pipe Inspection"
+                    "name": "Emergency Water Removal"
                   }
                 }
               ]
@@ -103,11 +103,11 @@ const Index = () => {
         </script>
 
         {/* Open Graph Tags */}
-        <meta property="og:title" content="Clay pipe replacement St. Louis MO | St. Louis Sewer Experts" />
-        <meta property="og:description" content="Professional clay pipe replacement in St. Louis, MO. Trenchless solutions for historic STL homes. Call (877) 792-1410 for a free estimate." />
+        <meta property="og:title" content="Sump pump replacement Peoria IL | Peoria Pump Pros" />
+        <meta property="og:description" content="Professional sump pump replacement in Peoria, IL. 24/7 emergency flood prevention and battery backup solutions. Call (877) 792-1410 for a free estimate." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://stlouis-clay-pipe.com/" />
-        <meta property="og:image" content="https://images.unsplash.com/photo-1518066000714-58c45f1a2c0a?auto=format&fit=crop&q=80" />
+        <meta property="og:url" content="https://peoria-sump-pump.com/" />
+        <meta property="og:image" content="https://images.unsplash.com/photo-1542013919164-94427b3fa437?auto=format&fit=crop&q=80" />
       </Helmet>
 
       <Header />
@@ -115,16 +115,16 @@ const Index = () => {
         <Hero
           title={
             <>
-              Clay pipe replacement St. Louis MO
-              <span className="block text-blue-400 mt-2">St. Louis Sewer Masters: Trenchless Experts</span>
+              Sump pump replacement Peoria IL
+              <span className="block text-blue-400 mt-2">Peoria Pump Pros: Your Flood Defense Team</span>
             </>
           }
-          subtitle="Don't let aging clay pipes threaten your St. Louis home's foundation or safety. We specialize in non-invasive, trenchless sewer replacement, removing brittle clay lines and replacing them with durable, root-proof systems without destroying your historic St. Louis yard."
-          image="https://images.unsplash.com/photo-1503387762-592adee11292?auto=format&fit=crop&q=80"
+          subtitle="Don't wait for the next Illinois storm to find out your pump is failing. Our industrial-strength sump pump systems provide relentless protection for your Peoria basement—combining high-torque primary pumps with fail-safe battery backups that keep running even when the power goes out."
+          image="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&q=80"
         />
         <Services />
         <WhyUs />
-        <ClayPipeInfo />
+        <SumpPumpInfo />
         <FAQ />
         <Contact />
         <RandomLinks />
@@ -136,5 +136,6 @@ const Index = () => {
 };
 
 export default Index;
+
 
 

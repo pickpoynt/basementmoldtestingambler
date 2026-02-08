@@ -3,33 +3,33 @@ import { Shield, Microscope, MapPin, Building2, ClipboardCheck, Zap, Award, Chec
 const reasons = [
   {
     icon: Award,
-    title: "St. Louis's Sewer Masters",
-    description: "We are the leading specialists for trenchless clay pipe replacement in St. Louis, serving historic districts from Lafayette Square to Dogtown with surgical precision."
+    title: "Peoria's Pumping Authority",
+    description: "We are the leading specialists for high-capacity flood prevention in Peoria, serving the Illinois River valley with precision and speed for over 20 years."
   },
   {
     icon: Microscope,
-    title: "HD Robotic Entry",
-    description: "Every STL sewer project starts with a robotic camera inspection, allowing us to see every crack and root intrusion in your 100-year-old clay pipes."
+    title: "Diagnostic Site Assessment",
+    description: "Every Peoria project begins with a full assessment of your basement's drainage capacity, ensuring we install the exact horsepower your property requires."
   },
   {
     icon: Building2,
-    title: "Commercial Grade Tech",
-    description: "We use industrial-grade pipe bursting and relining equipment that is far more durable and less invasive than the methods used by generic St. Louis plumbers."
+    title: "Industrial Grade Equipment",
+    description: "We use professional-grade cast iron pumps that far outlast the plastic consumer models found in big-box stores. Built for Peoria's toughest storms."
   },
   {
     icon: ClipboardCheck,
     title: "Licensed & Locally Insured",
-    description: "Our St. Louis team is fully licensed and insured in Missouri, ensuring your property is protected and all work exceeds local STL plumbing codes."
+    description: "Our Peoria team is fully licensed and insured in Illinois, ensuring your home is protected and all work exceeds local building and safety codes."
   },
   {
     icon: Shield,
-    title: "Trenchless Guarantee",
-    description: "We specialize in non-invasive repairs. No digging up your Forest Park area lawn or South City driveway—we fix your pipes entirely from the inside out."
+    title: "Zero-Flood Guarantee",
+    description: "We don't just replace pumps; we design systems. Our redundant backup configurations ensure your basement stays bone-dry, guaranteed."
   },
   {
     icon: MapPin,
-    title: "Deep St. Louis Roots",
-    description: "We are proud St. Louis locals. Whether you're near the Arch or in University City, we understand the specific soil and infrastructure challenges of our city."
+    title: "Peoria's Local Team",
+    description: "We live and work in Peoria. From Grandview Drive to North Peoria, we understand the specific water-table challenges facing our local neighborhoods."
   }
 ];
 
@@ -39,10 +39,10 @@ const WhyUs = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-4">
-            St. Louis's Highest Rated Sewer Specialists
+            Peoria's Highest Rated Flood Specialists
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Choose the team that St. Louis homeowners trust. We specialize in turning a recurring sewer nightmare into a permanent, maintenance-free solution.
+            Choose the team that Peoria homeowners trust. We specialize in turning a basement flooding risk into a permanent, maintenance-free peace of mind.
           </p>
         </div>
 
@@ -70,5 +70,6 @@ const WhyUs = () => {
 };
 
 export default WhyUs;
+
 
 

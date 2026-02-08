@@ -1,83 +1,109 @@
-import { Droplets, Shield, Clock, Power, Wrench, AlertTriangle } from "lucide-react";
+import { AlertOctagon, CheckSquare, Zap, Waves, ShieldAlert, CheckCircle2, Droplets, Hammer } from "lucide-react";
+
+const infoData = [
+    {
+        icon: Waves,
+        title: "Primary Pump Burnout",
+        description: "In high-water-table areas of Peoria like West Bluff, original sump pumps work overtime. Eventually, the motor fails under the constant strain of Illinois's seasonal rains.",
+    },
+    {
+        icon: Zap,
+        title: "Float Switch Failures",
+        description: "The float switch is the #1 cause of basement flooding in Peoria. Debris or mechanical wear can trap the switch, preventing the pump from activating exactly when you need it most.",
+    },
+    {
+        icon: ShieldAlert,
+        title: "Storm-Induced Outages",
+        description: "Heavy Peoria storms often knock out local power. Without a battery backup, your primary sump pump is useless. Our systems include high-capacity backups for total security.",
+    },
+];
+
+const benefitsData = [
+    "Prevents thousands in flood damage",
+    "Eliminates basement mold & mildew",
+    "Ensures zero-noise silent operation",
+    "Increases Peoria property resale value",
+    "Protects finished basement flooring",
+    "Lifetime battery technology included",
+];
 
 const SumpPumpInfo = () => {
     return (
-        <section id="sump-pump-info" className="py-20 bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100">
+        <section id="sump-pump-info" className="py-24 bg-gradient-hero">
             <div className="container mx-auto px-4">
-                <div className="max-w-6xl mx-auto">
-                    <div className="text-center mb-16">
-                        <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-                            Expert Sump Pump Water Cleanup in Cohasset, MA
-                        </h2>
-                        <p className="text-xl text-slate-700 max-w-3xl mx-auto leading-relaxed">
-                            Cohasset's high water table and coastal storms put immense pressure on basement sump pumps. When they fail, water rises quickly. We provide immediate extraction to protect your finished basement.
+                <div className="text-center max-w-3xl mx-auto mb-16">
+                    <span className="inline-block px-4 py-2 bg-blue-500/20 border border-blue-500/30 rounded-full text-blue-400 text-sm font-semibold mb-4 text-center">
+                        Peoria Water Management Experts
+                    </span>
+                    <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
+                        Why Peoria Sump Pumps Fail
+                    </h2>
+                    <p className="text-slate-300 text-lg">
+                        A sump pump is your Peoria home's only defense against rising ground water. Understanding the common points of failure—from float jams to power loss—is essential for a dry, healthy basement.
+                    </p>
+                </div>
+
+                {/* Info Cards */}
+                <div className="grid md:grid-cols-3 gap-8 mb-16">
+                    {infoData.map((info, index) => (
+                        <div
+                            key={index}
+                            className="bg-slate-900 rounded-xl p-8 shadow-lg border border-slate-800 hover:border-blue-500/30 transition-all duration-300"
+                        >
+                            <div className="w-14 h-14 rounded-xl bg-blue-500/10 flex items-center justify-center mb-6">
+                                <info.icon className="w-7 h-7 text-blue-400" />
+                            </div>
+                            <h3 className="text-xl font-heading font-bold text-white mb-3">
+                                {info.title}
+                            </h3>
+                            <p className="text-slate-400 leading-relaxed">
+                                {info.description}
+                            </p>
+                        </div>
+                    ))}
+                </div>
+
+                {/* Two Column Content */}
+                <div className="grid lg:grid-cols-2 gap-12 items-center">
+                    <div className="bg-slate-900 rounded-2xl p-8 lg:p-10 shadow-xl border border-slate-800">
+                        <div className="flex items-center gap-3 mb-6 font-center justify-center">
+                            <Droplets className="w-8 h-8 text-blue-400" />
+                            <h3 className="text-2xl font-heading font-bold text-white">
+                                Intelligent Backup Systems
+                            </h3>
+                        </div>
+                        <p className="text-slate-400 mb-6 leading-relaxed">
+                            We assume nothing. Every Peoria installation includes a diagnostic test of your current drainage pit. We ensure the basin is clear of silt and that the discharge line is unobstructed.
+                        </p>
+                        <p className="text-slate-400 leading-relaxed">
+                            Our smart systems notify you if the power goes out, monitoring battery levels and pump cycles via Wi-Fi, so you're protected even when you're away from your Peoria property.
                         </p>
                     </div>
 
-                    <div className="grid md:grid-cols-2 gap-8 mb-16">
-                        <div className="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 border-l-4 border-blue-600">
-                            <div className="flex items-start gap-4 mb-4">
-                                <div className="bg-blue-100 p-3 rounded-lg">
-                                    <Power className="w-8 h-8 text-blue-600" />
-                                </div>
-                                <div>
-                                    <h3 className="text-2xl font-bold text-slate-900 mb-3">
-                                        Power Failure Response
-                                    </h3>
-                                    <p className="text-slate-700 leading-relaxed mb-4">
-                                        Nor'easters often bring power outages along with heavy rain. If your battery backup fails or you don't have one, we arrive with self-powered extraction equipment to remove the water immediately.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                    <div className="bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl p-8 lg:p-10 shadow-xl">
+                        <h3 className="text-2xl font-heading font-bold text-white mb-6">
+                            Benefits of Modern Pumping
+                        </h3>
+                        <ul className="space-y-4">
+                            {benefitsData.map((benefit, index) => (
+                                <li key={index} className="flex items-start gap-3">
+                                    <CheckSquare className="w-6 h-6 text-white flex-shrink-0 mt-0.5" />
+                                    <span className="text-blue-50 text-lg">
+                                        {benefit}
+                                    </span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
 
-                        <div className="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 border-l-4 border-amber-600">
-                            <div className="flex items-start gap-4 mb-4">
-                                <div className="bg-amber-100 p-3 rounded-lg">
-                                    <Clock className="w-8 h-8 text-amber-600" />
-                                </div>
-                                <div>
-                                    <h3 className="text-2xl font-bold text-slate-900 mb-3">
-                                        Rapid Water Extraction
-                                    </h3>
-                                    <p className="text-slate-700 leading-relaxed mb-4">
-                                        Seconds matter in a finished basement. We use industrial pumps and truck-mounted vacuums to pull water from carpets and pads before it wicks into drywall and insulation.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 border-l-4 border-green-600">
-                            <div className="flex items-start gap-4 mb-4">
-                                <div className="bg-green-100 p-3 rounded-lg">
-                                    <Wrench className="w-8 h-8 text-green-600" />
-                                </div>
-                                <div>
-                                    <h3 className="text-2xl font-bold text-slate-900 mb-3">
-                                        Mechanical Failure Cleanup
-                                    </h3>
-                                    <p className="text-slate-700 leading-relaxed mb-4">
-                                        Whether it's a stuck float switch or a burnt-out motor, we clean up the mess. We also inspect the area for mold risks if the failure went unnoticed for several hours.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 border-l-4 border-purple-600">
-                            <div className="flex items-start gap-4 mb-4">
-                                <div className="bg-purple-100 p-3 rounded-lg">
-                                    <Shield className="w-8 h-8 text-purple-600" />
-                                </div>
-                                <div>
-                                    <h3 className="text-2xl font-bold text-slate-900 mb-3">
-                                        Mold Prevention
-                                    </h3>
-                                    <p className="text-slate-700 leading-relaxed mb-4">
-                                        Cohasset basements can be damp. After a flood, we deploy commercial dehumidifiers to bring relative humidity down to safe levels, preventing mold growth on organic materials.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                {/* Bottom CTA */}
+                <div className="mt-16 text-center">
+                    <div className="inline-flex items-center gap-4 bg-white/5 backdrop-blur-sm rounded-full px-8 py-4 border border-white/10">
+                        <Hammer className="w-6 h-6 text-blue-400" />
+                        <span className="text-white font-medium text-lg">
+                            Protect your Peoria basement today. Call (877) 792-1410.
+                        </span>
                     </div>
                 </div>
             </div>

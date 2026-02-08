@@ -2,20 +2,20 @@ import { ExternalLink } from "lucide-react";
 
 const links = [
   {
-    name: "St. Louis Plumbing Network",
-    url: "#"
+    name: "Peoria Plumbing Network",
+    url: "https://freezeproofoutdoorfaucetreplacementoh.netlify.app/"
   },
   {
-    name: "Missouri Drain Pros",
-    url: "#"
+    name: "Illinois Drain Pros",
+    url: "https://emergencyslableakdetectionnapervill.vercel.app/"
   },
   {
-    name: "STL Sewer Services",
-    url: "#"
+    name: "Central IL Sewer Services",
+    url: "https://galvanized-pipe-replacement-akron.lovable.app/"
   },
   {
-    name: "Midwest Home Care",
-    url: "#"
+    name: "Tri-County Home Care",
+    url: "https://tanklesswaterheaterdescalingbellevu.vercel.app/"
   },
 ];
 
@@ -25,8 +25,9 @@ const RandomLinks = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap justify-center items-center gap-6">
           <span className="text-slate-400 font-medium text-sm lg:mr-4 uppercase tracking-widest text-center w-full lg:w-auto mb-4 lg:mb-0">
-            Missouri's Premier Home Network
+            Illinois's Premier Home Network
           </span>
+
           {links.map((link, index) => (
             <a
               key={index}

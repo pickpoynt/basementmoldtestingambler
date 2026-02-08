@@ -16,7 +16,7 @@ const Header = () => {
 
   const navLinks = [
     { name: "Services", href: "#services" },
-    { name: "Sewer Info", href: "#clay-pipe-info" },
+    { name: "Flood Info", href: "#sump-pump-info" },
     { name: "FAQ", href: "#faq" },
     { name: "Contact", href: "#contact" },
   ];
@@ -35,13 +35,14 @@ const Header = () => {
             </div>
             <div>
               <span className={`font-heading font-bold text-xl block leading-none ${isScrolled ? "text-slate-900" : "text-white"}`}>
-                St. Louis
+                Peoria
               </span>
               <span className={`text-sm font-medium ${isScrolled ? "text-blue-600" : "text-blue-100"}`}>
-                Sewer Experts
+                Pump Pros
               </span>
             </div>
           </div>
+
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">

@@ -7,28 +7,28 @@ import {
 
 const faqs = [
   {
-    question: "Why were clay pipes used so much in St. Louis?",
-    answer: "Vitrified clay was the industry standard for sewer lines in St. Louis for over a century due to its resistance to chemical corrosion. However, its main drawback is its brittleness and the fact that it was installed in 2-to-3-foot sections, creating many joints that roots can easily penetrate."
+    question: "When should I replace my Peoria sump pump?",
+    answer: "Most high-quality sump pumps have a lifespan of 7 to 10 years. In Peoria, where the water table can be high near the river, we recommend a proactive replacement every 7 years to avoid emergency failures during heavy Illinois spring rains."
   },
   {
-    question: "How do I know if my historic STL home still has clay pipes?",
-    answer: "If your St. Louis home was built before 1970 and hasn't had a major sewer overhaul, it's highly likely you have clay pipes. We can perform a high-definition video sewer lateral inspection to confirm the material and condition of your lines."
+    question: "Is a battery backup really necessary in Peoria?",
+    answer: "Yes. Major storms in Central Illinois often cause power outages. Without a battery backup, your primary pump will stop working exactly when it's needed most. Our backup systems can pump for days on a single charge."
   },
   {
-    question: "Is trenchless replacement better than digging in St. Louis?",
-    answer: "In St. Louis, where many homes have established landscaping, historic brick sidewalks, or shared driveways, trenchless technology is vastly superior. It allows us to replace the entire line with a single continuous HDPE pipe without destroying your property."
+    question: "What size pump does my Peoria home need?",
+    answer: "This depends on the depth of your basement and the volume of water entry. Most Peoria residential homes require a 1/3 HP or 1/2 HP pump. We perform a volume calculation to ensure your new pump won't short-cycle or burn out."
   },
   {
-    question: "Can't I just snake the roots out of my clay pipes?",
-    answer: "Snaking is a temporary fix for St. Louis sewers. It cuts a small hole through the roots, but they will grow back thicker and faster within months. Over time, the pressure from these roots will eventually shatter the brittle clay tiles, leading to a much more expensive collapse."
+    question: "Can I replace the sump pump myself?",
+    answer: "While possible, professional installation ensures the discharge lines are correctly pitched, the check valve is functional, and the electrical connections are waterproof. We provide a full warranty on both parts and labor for your Peoria home."
   },
   {
-    question: "What is 'pipe bursting' in the context of STL sewers?",
-    answer: "Pipe bursting is a trenchless method where a specialized head is pulled through your old clay pipe, shattering it outward into the soil while simultaneously pulling a new, seamless polyethylene pipe into place behind it."
+    question: "What is a 'pedestal' pump vs. a 'submersible' pump?",
+    answer: "Pedestal pumps have the motor above the water line, while submersibles sit directly in the pit. Submersibles are much quieter, safer for families with children, and generally more powerful—making them our top recommendation for Peoria basements."
   },
   {
-    question: "Does St. Louis city require an inspection for sewer replacement?",
-    answer: "Yes. Most municipalities in the St. Louis metro area, including St. Louis City and County, require permits and inspections for sewer lateral work. Our team handles all permitting and ensures every job meets or exceeds local building codes."
+    question: "Does Peoria city code require an inspection?",
+    answer: "Replacements usually do not require a major inspection, but new installations or significant discharge line changes must meet Peoria plumbing codes. We handle all compliance and ensure your system is up to current standards."
   }
 ];
 
@@ -38,10 +38,10 @@ const FAQ = () => {
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-4">
-            St. Louis Clay Pipe FAQ
+            Peoria Sump Pump FAQ
           </h2>
           <p className="text-lg text-slate-600">
-            Critical expertise for St. Louis homeowners dealing with aging vitrified clay plumbing.
+            Critical flood protection expertise for Peoria homeowners and property managers.
           </p>
         </div>
 
@@ -63,5 +63,6 @@ const FAQ = () => {
 };
 
 export default FAQ;
+
 
 

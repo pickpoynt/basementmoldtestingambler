@@ -3,51 +3,51 @@ import { Search, Droplets, Shield, Hammer, AlertTriangle, Waves, Activity, Zap, 
 const services = [
   {
     icon: Zap,
-    title: "Trenchless Pipe Bursting",
-    description: "The modern standard for St. Louis clay pipe replacement. We pull a new HDPE line through the old tile, shattering it without digging up your yard.",
-    link: "#clay-pipe-info"
-  },
-  {
-    icon: Hammer,
-    title: "Cured-In-Place Pipelining",
-    description: "Perfect for historic St. Louis homes. We create a 'pipe within a pipe' using epoxy-resin, sealing all cracks and joints permanently.",
-    link: "#clay-pipe-info"
-  },
-  {
-    icon: Droplets,
-    title: "Root Intrusion Clearance",
-    description: "Removing aggressive tree roots that have penetrated brittle clay joints in older St. Louis neighborhoods like South City.",
-    link: "#clay-pipe-info"
-  },
-  {
-    icon: AlertTriangle,
-    title: "Emergency Sewer Response",
-    description: "24/7 rapid response for total sewer backups in St. Louis. We stabilize the situation and clear the line fast to prevent flooding.",
-    link: "#clay-pipe-info"
-  },
-  {
-    icon: Search,
-    title: "HD Video Sewer Inspection",
-    description: "We use robotic cameras to navigate St. Louis's complex sewer networks, providing you with a high-definition recording of your clay pipe.",
-    link: "#clay-pipe-info"
-  },
-  {
-    icon: Waves,
-    title: "Main Line Descaling",
-    description: "Removing decades of scale and mineral buildup from historic St. Louis cast iron and clay pipes, restoring full flow capacity.",
-    link: "#clay-pipe-info"
+    title: "Primary Pump Replacement",
+    description: "High-capacity submersible pumps designed for the heavy silt levels found in Peoria soil. Reliable, industrial-grade motor protection.",
+    link: "#sump-pump-info"
   },
   {
     icon: Shield,
-    title: "Point Repair Solutions",
-    description: "Targeted repairs for localized failures in St. Louis clay pipes, avoiding a full replacement when only a single section is damaged.",
-    link: "#clay-pipe-info"
+    title: "Battery Backup Systems",
+    description: "Protection when the Peoria power grid fails. Our redundant systems pump thousands of gallons on a single charge during storms.",
+    link: "#sump-pump-info"
+  },
+  {
+    icon: AlertTriangle,
+    title: "Emergency Pump Repair",
+    description: "24/7 rapid response for failing sump pumps in the Peoria area. We eliminate rising water before it reaches your finished basement.",
+    link: "#sump-pump-info"
+  },
+  {
+    icon: Waves,
+    title: "Sump Pit Maintenance",
+    description: "Comprehensive cleaning and descaling of your drainage pit to ensure zero mechanical interference with your pump's operation.",
+    link: "#sump-pump-info"
+  },
+  {
+    icon: Activity,
+    title: "Sewage Ejector Service",
+    description: "Specialized pumps for basement bathrooms and laundry rooms. We install heavy-duty grinders and high-torque ejector units.",
+    link: "#sump-pump-info"
+  },
+  {
+    icon: Droplets,
+    title: "Waterproofing Inspections",
+    description: "Full diagnostic of your Peoria home's drain tile system and foundation to identify potential flooding risks before they occur.",
+    link: "#sump-pump-info"
+  },
+  {
+    icon: Search,
+    title: "Alarm & Wi-Fi Monitoring",
+    description: "Stay informed from anywhere. We install smart sensors that alert your phone if pump levels rise or if power is lost at your Peoria property.",
+    link: "#sump-pump-info"
   },
   {
     icon: ClipboardList,
-    title: "Pre-Purchase Inspections",
-    description: "Comprehensive sewer scans for St. Louis homebuyers. Know the condition of those underground clay pipes before you sign the contract.",
-    link: "#clay-pipe-info"
+    title: "New Home Pump Scans",
+    description: "Peace of mind for Peoria buyers. We certify the status of the basement drainage system before you close on your new Illinois home.",
+    link: "#sump-pump-info"
   }
 ];
 
@@ -57,10 +57,10 @@ const Services = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-4">
-            St. Louis's Specialized Sewer Experts
+            Peoria's Specialized Flood Protection
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Don't trust generic plumbers with your historic St. Louis sewer. Our team specializes specifically in the challenges of aging clay pipes and trenchless repair.
+            Don't trust a generic plumber with your basement's safety. Our Peoria team specializes specifically in the engineering of high-capacity sump pump systems.
           </p>
         </div>
 

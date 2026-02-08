@@ -8,10 +8,10 @@ const Contact = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="animate-fade-in">
             <h2 className="text-3xl md:text-5xl font-heading font-bold text-white mb-6 leading-tight">
-              Schedule Your St. Louis Clay Pipe Replacement
+              Schedule Your Peoria Sump Pump Replacement
             </h2>
             <p className="text-xl text-slate-300 mb-10 leading-relaxed font-medium">
-              Don't wait for your sewer line to collapse and flood your St. Louis property. Our local trenchless specialists are ready to provide a permanent, root-proof solution today.
+              Don't wait for the next heavy Illinois storm to flood your Peoria property. Our local flood prevention specialists are ready to provide a permanent, redundant pumping solution today.
             </p>
 
             <div className="space-y-6">
@@ -20,7 +20,7 @@ const Contact = () => {
                   <Phone className="w-7 h-7 text-white" />
                 </div>
                 <div>
-                  <div className="text-blue-400 font-bold mb-1 uppercase tracking-wider text-sm">St. Louis Service Line</div>
+                  <div className="text-blue-400 font-bold mb-1 uppercase tracking-wider text-sm">Peoria Service Line</div>
                   <a href="tel:8777921410" className="text-2xl md:text-3xl font-heading font-bold text-white hover:text-blue-400 transition-colors">
                     (877) 792-1410
                   </a>
@@ -32,9 +32,9 @@ const Contact = () => {
                   <MapPin className="w-7 h-7 text-blue-400" />
                 </div>
                 <div>
-                  <div className="text-blue-400 font-bold mb-1 uppercase tracking-wider text-sm">STL HQ</div>
+                  <div className="text-blue-400 font-bold mb-1 uppercase tracking-wider text-sm">Peoria HQ</div>
                   <div className="text-xl font-heading font-bold text-white">
-                    Serving St. Louis, St. Charles & Clayton
+                    Serving Peoria, East Peoria, & Morton
                   </div>
                 </div>
               </div>
@@ -46,7 +46,7 @@ const Contact = () => {
                 <div>
                   <div className="text-blue-400 font-bold mb-1 uppercase tracking-wider text-sm">Service Status</div>
                   <div className="text-xl font-heading font-bold text-white">
-                    24/7 Emergency Sewer Scans Available
+                    24/7 Emergency Storm Protection Available
                   </div>
                 </div>
               </div>
@@ -56,18 +56,18 @@ const Contact = () => {
           <div className="bg-white rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden animate-fade-in-delay-1">
             <div className="relative z-10">
               <h3 className="text-2xl font-heading font-bold text-slate-900 mb-4">
-                Request Free Trenchless Estimate
+                Request Free Protection Estimate
               </h3>
               <p className="text-slate-600 mb-8 font-medium">
-                Call now for a professional sewer diagnostic. We offer upfront pricing and high-definition video inspections for St. Louis homeowners and commercial clients.
+                Call now for a professional basement flood assessment. We offer upfront pricing and high-capacity pump installations for Peoria homeowners and commercial clients.
               </p>
 
               <div className="p-6 bg-blue-50 rounded-2xl border border-blue-100 mb-8">
                 <div className="flex gap-4 items-start">
                   <ShieldCheck className="w-6 h-6 text-blue-600 shrink-0" />
                   <div>
-                    <div className="font-bold text-slate-900 mb-1 leading-none uppercase text-xs tracking-widest">MO Licensed & Insured</div>
-                    <p className="text-sm text-slate-600">Missouri Plumbing License #STLSEWER99. Bonded and fully insured for your safety.</p>
+                    <div className="font-bold text-slate-900 mb-1 leading-none uppercase text-xs tracking-widest">IL Licensed & Insured</div>
+                    <p className="text-sm text-slate-600">Illinois Plumbing License #PEOPUMP99. Bonded and fully insured for your safety in the Peoria area.</p>
                   </div>
                 </div>
               </div>
@@ -79,6 +79,7 @@ const Contact = () => {
                 </a>
               </Button>
             </div>
+
 
 
 
