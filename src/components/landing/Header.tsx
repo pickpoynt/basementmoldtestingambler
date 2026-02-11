@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Phone, Menu, X, Home, Droplets } from "lucide-react";
+import { Phone, Menu, X, Home, Droplets, Utensils } from "lucide-react";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -16,7 +16,7 @@ const Header = () => {
 
   const navLinks = [
     { name: "Services", href: "#services" },
-    { name: "Attic Health", href: "#attic-mold-info" },
+    { name: "Kitchen Health", href: "#kitchen-mold-info" },
     { name: "FAQ", href: "#faq" },
     { name: "Contact", href: "#contact" },
   ];
@@ -31,14 +31,14 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center gap-2">
             <div className={`w-10 h-10 rounded-xl flex items-center justify-center ${isScrolled ? "bg-indigo-600" : "bg-white"}`}>
-              <Home className={`w-6 h-6 ${isScrolled ? "text-white" : "text-indigo-600"}`} />
+              <Utensils className={`w-6 h-6 ${isScrolled ? "text-white" : "text-indigo-600"}`} />
             </div>
             <div>
               <span className={`font-heading font-bold text-xl block leading-none ${isScrolled ? "text-slate-900" : "text-white"}`}>
                 Sausalito
               </span>
               <span className={`text-sm font-medium ${isScrolled ? "text-indigo-600" : "text-indigo-100"}`}>
-                Attic Mold Pros
+                Kitchen Mold Experts
               </span>
             </div>
           </div>

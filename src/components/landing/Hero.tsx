@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Phone, ArrowRight, ShieldCheck, Waves, Zap, Home } from "lucide-react";
+import { Phone, ArrowRight, ShieldCheck, Waves, Zap, Home, Utensils } from "lucide-react";
 
 interface HeroProps {
   title?: React.ReactNode;
@@ -10,23 +10,23 @@ interface HeroProps {
 const Hero = ({
   title = (
     <>
-      Attic mold remediation Sausalito
-      <span className="block text-indigo-400 mt-2">Sausalito Attic Mold Pros: Hillside Moisture Specialists</span>
+      Kitchen cabinet mold removal Sausalito
+      <span className="block text-indigo-400 mt-2">Sausalito Kitchen Mold Experts: Cabinet Restoration Pros</span>
     </>
   ),
-  subtitle = "Stop foggy-night condensation from rotting your home. Our specialized attic remediation and Marin-grade ventilation systems target spores trapped in your roof—preventing health risks with Sausalito precision.",
-  image = "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80"
+  subtitle = "Protect your luxury kitchen from hidden moisture. Our specialized cabinet remediation and Marin-grade leak detection systems target spores trapped behind your woodwork—ensuring food safety with Sausalito precision.",
+  image = "https://images.unsplash.com/photo-1556912177-c54030639a9c?auto=format&fit=crop&q=80"
 }: HeroProps) => {
   return (
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
       {/* Background Image with Unique Overlay */}
       <div className="absolute inset-0 z-0">
-        <img src={image} alt="Attic mold remediation Sausalito" className="w-full h-full object-cover brightness-75" />
-        {/* UNIQUE OVERLAY IMAGE: Using a spore texture overlay for the niche */}
+        <img src={image} alt="Kitchen cabinet mold removal Sausalito" className="w-full h-full object-cover brightness-75" />
+        {/* UNIQUE OVERLAY IMAGE: Using a liquid droplet texture overlay for the kitchen niche */}
         <div className="absolute inset-0 opacity-20 mix-blend-overlay overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1620121692029-d088224efc74?auto=format&fit=crop&q=80"
-            alt="Spore Texture Overlay"
+            src="https://images.unsplash.com/photo-1527489377706-5bf97e608852?auto=format&fit=crop&q=80"
+            alt="Water Droplet Texture Overlay"
             className="w-full h-full object-cover scale-150 animate-pulse transition-all duration-3000"
           />
         </div>
@@ -37,7 +37,7 @@ const Hero = ({
         <div className="max-w-3xl">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 mb-8 animate-fade-in shadow-lg shadow-indigo-500/5">
             <ShieldCheck className="w-4 h-4" />
-            <span className="text-sm font-bold uppercase tracking-wider">Sausalito's Certified Remediation Specialists</span>
+            <span className="text-sm font-bold uppercase tracking-wider">Sausalito's Certified Kitchen Remediation</span>
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-8 animate-fade-in leading-[1.1]">
@@ -57,7 +57,7 @@ const Hero = ({
             </Button>
             <Button size="lg" variant="outline" className="border-slate-700 text-white hover:bg-slate-800 transition-all h-14 px-8 text-lg" asChild>
               <a href="#services" className="flex items-center gap-2">
-                Remediation Methodology
+                Restoration Methodology
                 <ArrowRight className="w-5 h-5" />
               </a>
             </Button>
@@ -66,9 +66,9 @@ const Hero = ({
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-12 border-t border-white/10 animate-fade-in-delay-3">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-lg bg-indigo-500/20 flex items-center justify-center">
-                <Home className="w-6 h-6 text-indigo-400" />
+                <Utensils className="w-6 h-6 text-indigo-400" />
               </div>
-              <span className="text-white font-medium">Attic Mold Pros</span>
+              <span className="text-white font-medium">Food-Safe Fix</span>
             </div>
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-lg bg-indigo-500/20 flex items-center justify-center">

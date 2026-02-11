@@ -2,8 +2,9 @@ import Header from "@/components/landing/Header";
 import Hero from "@/components/landing/Hero";
 import Services from "@/components/landing/Services";
 import WhyUs from "@/components/landing/WhyUs";
-import AtticMoldInfo from "@/components/landing/AtticMoldInfo";
+import KitchenCabinetMoldInfo from "@/components/landing/KitchenCabinetMoldInfo";
 import FAQ from "@/components/landing/FAQ";
+
 import Contact from "@/components/landing/Contact";
 import Footer from "@/components/landing/Footer";
 import RandomLinks from "@/components/landing/RandomLinks";
@@ -15,18 +16,18 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Attic mold remediation Sausalito | Sausalito Attic Mold Pros</title>
-        <meta name="description" content="Attic mold remediation Sausalito. Professional mold removal, attic ventilation, and fog-moisture control in Marin County. Call (380) 266-0944!" />
-        <meta name="keywords" content="Attic mold remediation Sausalito, mold removal Sausalito CA, Sausalito attic ventilation, Marin County mold inspector" />
-        <link rel="canonical" href="https://sausalito-attic-mold.com/" />
+        <title>Kitchen cabinet mold removal Sausalito | Sausalito Kitchen Mold Experts</title>
+        <meta name="description" content="Kitchen cabinet mold removal Sausalito. Specialized mold remediation for kitchen cabinetry, leak detection, and food-safe cleaning in Marin County. Call (380) 266-0944!" />
+        <meta name="keywords" content="kitchen cabinet mold removal Sausalito, kitchen mold remediation Sausalito CA, Sausalito cabinet leak repair, Marin County kitchen mold inspector" />
+        <link rel="canonical" href="https://sausalito-kitchen-mold.com/" />
 
         {/* JSON-LD schema for LocalBusiness */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            "name": "Sausalito Attic Mold Pros",
-            "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80",
+            "name": "Sausalito Kitchen Mold Experts",
+            "image": "https://images.unsplash.com/photo-1620626011761-9963d7521576?auto=format&fit=crop&q=80",
             "telephone": "+1-380-266-0944",
             "address": {
               "@type": "PostalAddress",
@@ -46,7 +47,7 @@ const Index = () => {
               "name": "Sausalito, California"
             },
             "priceRange": "$$$",
-            "description": "Expert attic mold remediation and moisture control in Sausalito, CA. Specialized in hillside ventilation, HEPA filtration, and non-toxic removal."
+            "description": "Premium kitchen cabinet mold removal and leak detection in Sausalito, CA. We specialize in non-toxic, food-safe remediation for luxury kitchens."
           })}
         </script>
 
@@ -55,10 +56,10 @@ const Index = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Service",
-            "serviceType": "Attic Mold Remediation Services",
+            "serviceType": "Kitchen Cabinet Mold Removal",
             "provider": {
               "@type": "LocalBusiness",
-              "name": "Sausalito Attic Mold Pros",
+              "name": "Sausalito Kitchen Mold Experts",
               "telephone": "+1-380-266-0944"
             },
             "areaServed": {
@@ -67,34 +68,34 @@ const Index = () => {
             },
             "hasOfferCatalog": {
               "@type": "OfferCatalog",
-              "name": "Attic Recovery Services",
+              "name": "Kitchen Restoration Services",
               "itemListElement": [
                 {
                   "@type": "Offer",
                   "itemOffered": {
                     "@type": "Service",
-                    "name": "HEPA Air Scrubbing"
+                    "name": "Cabinet Mold Remediation"
                   }
                 },
                 {
                   "@type": "Offer",
                   "itemOffered": {
                     "@type": "Service",
-                    "name": "Dry Ice Blasting Remediation"
+                    "name": "Infrared Leak Detection"
                   }
                 },
                 {
                   "@type": "Offer",
                   "itemOffered": {
                     "@type": "Service",
-                    "name": "Attic Ventilation Retrofitting"
+                    "name": "HEPA Air Filtration"
                   }
                 },
                 {
                   "@type": "Offer",
                   "itemOffered": {
                     "@type": "Service",
-                    "name": "Thermal Moisture Mapping"
+                    "name": "Food-Safe Antimicrobial Treatment"
                   }
                 }
               ]
@@ -103,32 +104,34 @@ const Index = () => {
         </script>
 
         {/* Open Graph Tags */}
-        <meta property="og:title" content="Attic mold remediation Sausalito | Attic Mold Pros" />
-        <meta property="og:description" content="Professional attic mold remediation in Sausalito, CA. 24/7 HEPA air scrubbing and ventilation repair. Call (380) 266-0944 for a diagnostic." />
+        <meta property="og:title" content="Kitchen cabinet mold removal Sausalito | Kitchen Mold Experts" />
+        <meta property="og:description" content="Professional kitchen cabinet mold removal in Sausalito, CA. 24/7 leak detection and food-safe remediation. Call (380) 266-0944 for an inspection." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://sausalito-attic-mold.com/" />
-        <meta property="og:image" content="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80" />
+        <meta property="og:url" content="https://sausalito-kitchen-mold.com/" />
+        <meta property="og:image" content="https://images.unsplash.com/photo-1620626011761-9963d7521576?auto=format&fit=crop&q=80" />
       </Helmet>
+
 
       <Header />
       <main>
         <Hero
           title={
             <>
-              Attic mold remediation Sausalito
-              <span className="block text-indigo-400 mt-2">Sausalito Attic Mold Pros: Hillside Moisture Specialists</span>
+              Kitchen cabinet mold removal Sausalito
+              <span className="block text-indigo-400 mt-2">Sausalito Kitchen Mold Experts: Cabinet Restoration Pros</span>
             </>
           }
-          subtitle="Stop foggy-night condensation from rotting your home. Our specialized attic remediation and Marin-grade ventilation systems target spores trapped in your roof—preventing health risks with Sausalito precision."
-          image="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80"
+          subtitle="Protect your luxury kitchen from hidden moisture. Our specialized cabinet remediation and Marin-grade leak detection systems target spores trapped behind your woodwork—ensuring food safety with Sausalito precision."
+          image="https://images.unsplash.com/photo-1556912177-c54030639a9c?auto=format&fit=crop&q=80"
         />
         <Services />
         <WhyUs />
-        <AtticMoldInfo />
+        <KitchenCabinetMoldInfo />
         <FAQ />
         <Contact />
         <RandomLinks />
       </main>
+
       <Footer />
       <FloatingCallButton />
     </div>

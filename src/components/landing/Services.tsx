@@ -1,53 +1,53 @@
-import { Wind, Shield, Sparkles, AlertTriangle, Zap, Activity, Filter, Thermometer, ShieldCheck, Droplets, Waves, Home, Microscope } from "lucide-react";
+import { Wind, Shield, Sparkles, AlertTriangle, Zap, Activity, Filter, Thermometer, ShieldCheck, Droplets, Waves, Home, Microscope, GlassWater, Hammer } from "lucide-react";
 
 const services = [
   {
     icon: Microscope,
     title: "Eco-Remediation",
-    description: "Surgical removal of attic mold using dry ice blasting and non-toxic antimicrobials safe for Sausalito homes.",
-    link: "#attic-mold-info"
+    description: "Surgical removal of kitchen mold using food-safe, non-toxic antimicrobials safe for your family and cabinetry.",
+    link: "#kitchen-mold-info"
   },
   {
-    icon: Wind,
-    title: "Hillside Ventilation",
-    description: "Precision-engineered ridge and soffit vent retrofitting to stop fog-moisture accumulation in steep rooflines.",
-    link: "#attic-mold-info"
+    icon: Droplets,
+    title: "Leaking Sink Detection",
+    description: "Precision infrared mapping to find hidden moisture behind cabinets and under sink enclosures.",
+    link: "#kitchen-mold-info"
   },
   {
     icon: ShieldCheck,
     title: "HEPA Air Scrubbing",
-    description: "Industrial-grade air filtration to capture 99.97% of mold spores during the remediation process.",
-    link: "#attic-mold-info"
+    description: "Industrial-grade air filtration to capture 99.97% of mold spores, preventing contamination of your home.",
+    link: "#kitchen-mold-info"
   },
   {
-    icon: Thermometer,
-    title: "Thermal Mapping",
-    description: "Digital analysis of temperature differentials in your roof deck to find hidden fog-water intrusion points.",
-    link: "#attic-mold-info"
+    icon: GlassWater,
+    title: "Moisture Mitigation",
+    description: "Digital analysis of humidity levels in your kitchen to prevent future fog-moisture accumulation.",
+    link: "#kitchen-mold-info"
   },
   {
-    icon: Filter,
-    title: "Particulate Testing",
-    description: "Sausalito-specific air quality baseline testing to track remediation progress and indoor safety.",
-    link: "#attic-mold-info"
+    icon: Sparkles,
+    title: "Cabinet Restoration",
+    description: "Specialized cleaning and structural drying to save your high-end Sausalito cabinetry from rot.",
+    link: "#kitchen-mold-info"
   },
   {
     icon: Shield,
     title: "Non-Toxic Sealants",
-    description: "Applying EPA-registered, zero-VOC coatings that prevent mold roots from penetrating redwood rafters.",
-    link: "#attic-mold-info"
+    description: "Applying EPA-registered coatings that prevent mold roots from penetrating porous wood surfaces.",
+    link: "#kitchen-mold-info"
   },
   {
     icon: Activity,
-    title: "Clearance Verification",
-    description: "Post-remediation inspection and moisture testing to certify your attic is professionally dry and mold-free.",
-    link: "#attic-mold-info"
+    title: "Post-Removal Testing",
+    description: "Independent air quality testing to certify your kitchen is professionally dry and safe for food prep.",
+    link: "#kitchen-mold-info"
   },
   {
     icon: Zap,
     title: "1-Hour Sausalito ETA",
-    description: "Marin County's fastest attic diagnostic crew. Available 24/7 for emergency moisture intrusion calls.",
-    link: "#attic-mold-info"
+    description: "Marin County's fastest kitchen mold diagnostic crew. Available 24/7 for emergency water damage calls.",
+    link: "#kitchen-mold-info"
   }
 ];
 
@@ -57,10 +57,10 @@ const Services = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-4">
-            Sausalito's Advanced Attic Recovery Technology
+            Sausalito's Premier Kitchen Mold Restoration
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Protect your hillside home. Our Sausalito restoration team uses specialized attic equipment and Marin County moisture protocols.
+            Protect your home's value and your health. Our Sausalito team uses specialized kitchen equipment and Marin County moisture protocols.
           </p>
         </div>
 

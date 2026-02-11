@@ -1,65 +1,59 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-
 const faqs = [
   {
-    question: "Why does my Sausalito attic have mold while others don't?",
-    answer: "Sausalito's hillside microclimates are highly variable. Homes in fog-prone zones or those with older redwood structures and inadequate ridge ventilation are much more susceptible to condensation-driven mold growth."
+    question: "Is the mold removal process safe for food preparation areas?",
+    answer: "Absolutely. We use EPA-registered, food-safe antimicrobials that are specifically designed for kitchens. Our HEPA air scrubbing also ensures that no mold spores are left circulating in your cooking environment."
   },
   {
-    question: "Is the attic mold remediation process non-toxic?",
-    answer: "Yes. Sausalito Attic Mold Pros specializes in 'Eco-Remediation' which uses dry ice blasting (CO2) to remove mold roots and zero-VOC EPA-registered antimicrobials, making it safe for families and Marin's sensitive ecosystems."
+    question: "Can you remove mold without destroying my custom cabinets?",
+    answer: "Yes, that is our specialty. We use precision moisture mapping to find the exact source of the leak and often perform 'behind-cabinet' remediation or specialized drying techniques that preserve the structural integrity and finish of high-end woodwork."
   },
   {
-    question: "How long does a typical Sausalito attic remediation take?",
-    answer: "Most Sausalito attic projects are completed within 2 to 4 days. This includes containment setup, HEPA air scrubbing, remediation, and the installation of high-efficiency ventilation retrofits."
+    question: "How long does the kitchen remediation process take?",
+    answer: "For most Sausalito kitchens, the initial diagnostic and containment take just a few hours. Complete remediation and structural drying typically take 2-4 days, depending on the extent of the moisture intrusion behind the cabinets."
   },
   {
-    question: "Will my Marin County homeowners insurance cover attic mold?",
-    answer: "Coverage depends on the cause of the moisture. If the mold resulted from a sudden roof leak or pipe burst, it's often covered. We provide comprehensive documentation and moisture mapping to assist with your Marin County insurance claims."
+    question: "Does insurance cover kitchen cabinet mold removal?",
+    answer: "In many cases, yes, if the mold is a result of a sudden and accidental water leak (like a burst pipe under the sink). We provide detailed documentation and moisture mapping to assist with your insurance claim process."
   },
   {
-    question: "Do you offer air quality testing after the mold is removed?",
-    answer: "Absolutely. We conduct post-remediation clearance testing in every Sausalito home. We use third-party laboratories to verify that spore counts in your attic and living areas meet or exceed California safety standards."
+    question: "Why is mold growing in my kitchen if I don't see a leak?",
+    answer: "Sausalito's high coastal humidity, combined with steam from cooking, can lead to condensation in the dark, unventilated spaces behind cabinets. Small, slow pinhole leaks in water lines can also cause significant mold growth before any water is visible on the floor."
   }
 ];
 
 const FAQ = () => {
   return (
     <section id="faq" className="py-20 bg-white">
-      <div className="container mx-auto px-4 max-w-4xl">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-4">
-            Sausalito Attic Mold FAQ
-          </h2>
-          <p className="text-lg text-slate-600">
-            Professional remediation expertise for Marin County homeowners and hillside property managers.
-          </p>
-        </div>
+      <div className="container mx-auto px-4">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-4">
+              Kitchen Restoration FAQ
+            </h2>
+            <p className="text-lg text-slate-600">
+              Common questions about our Sausalito kitchen mold remediation services.
+            </p>
+          </div>
 
-        <Accordion type="single" collapsible className="w-full space-y-4">
-          {faqs.map((faq, index) => (
-            <AccordionItem key={index} value={`item-${index}`} className="border border-slate-200 rounded-xl px-4 bg-white shadow-sm overflow-hidden">
-              <AccordionTrigger className="text-left font-heading font-bold text-slate-900 hover:text-indigo-600 py-6 transition-colors leading-relaxed">
-                {faq.question}
-              </AccordionTrigger>
-              <AccordionContent className="text-slate-600 leading-relaxed pb-6">
-                {faq.answer}
-              </AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
+          <div className="space-y-6">
+            {faqs.map((faq, index) => (
+              <div
+                key={index}
+                className="p-6 rounded-xl bg-slate-50 border border-slate-100 hover:border-indigo-200 transition-colors"
+              >
+                <h3 className="text-lg font-bold text-slate-900 mb-3">
+                  {faq.question}
+                </h3>
+                <p className="text-slate-600 leading-relaxed">
+                  {faq.answer}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
 };
 
 export default FAQ;
-
-
-
-

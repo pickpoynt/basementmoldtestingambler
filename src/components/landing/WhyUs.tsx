@@ -1,68 +1,61 @@
-import { Shield, Microscope, MapPin, Home, ClipboardCheck, Wind, Award, Sparkles, Droplets, Waves } from "lucide-react";
+import { ShieldCheck, Clock, Award, Utensils } from "lucide-react";
 
 const reasons = [
   {
-    icon: Home,
-    title: "Sausalito Microclimate Experts",
-    description: "We lead Marin County in solving attic moisture issues caused by Sausalito's unique fog and hillside humidity."
+    icon: ShieldCheck,
+    title: "Food-Safe Protocols",
+    description: "We use only EPA-registered, non-toxic antimicrobials that are safe for kitchen surfaces and food prep areas."
   },
   {
-    icon: Microscope,
-    title: "Eco-Friendly Remediation",
-    description: "Advanced dry ice blasting and non-toxic antimicrobials that are safer for your family and Sausalito's environment."
+    icon: Utensils,
+    title: "Cabinet Specialists",
+    description: "Detailed remediation techniques designed to save luxury custom cabinetry and restore wood finish."
   },
   {
-    icon: Wind,
-    title: "Precision Ventilation",
-    description: "Specialized in retrofitting Marin hillside homes with high-performance airflow systems that prevent mold roots."
-  },
-  {
-    icon: ClipboardCheck,
-    title: "IICRC Certified Marin",
-    description: "Our team is IICRC certified in microbial remediation, ensuring every job meets California's highest standards."
-  },
-  {
-    icon: Shield,
-    title: "EPA Air Quality Guarantee",
-    description: "We don't just remove mold; we purify your air. Every project includes HEPA air scrubbing and clearance testing."
+    icon: Clock,
+    title: "Rapid Response",
+    description: "Our Sausalito-based crews are on-site within 60 minutes for emergency leak and mold diagnostics."
   },
   {
     icon: Award,
-    title: "Historic Home Care",
-    description: "Decades of experience working with Sausalito's historic redwood and timber-frame attic structures."
+    title: "Certified Experts",
+    description: "IICRC certified technicians with specific training in high-end kitchen restoration and moisture control."
   }
 ];
 
 const WhyUs = () => {
   return (
-    <section id="why-us" className="py-20 bg-slate-50">
+    <section id="why-us" className="py-20 bg-slate-900 text-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-4">
-            Sausalito's Choice for Attic Restoration
+          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+            Sausalito's Trusted Kitchen Restoration Team
           </h2>
-          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Choose the remediation team that Marin County homeowners trust. We specialize in turning a moldy attic into a healthy, dry space.
+          <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+            We understand the unique architectural needs of Marin County kitchens and provide precision care for your home.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          {reasons.map((reason, index) => (
-            <div
-              key={index}
-              className="p-8 rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-md transition-shadow"
-            >
-              <div className="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center mb-6">
-                <reason.icon className="w-6 h-6 text-indigo-600" />
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {reasons.map((reason, index) => {
+            const Icon = reason.icon;
+            return (
+              <div
+                key={index}
+                className="bg-slate-800/50 border border-slate-700 rounded-xl p-8 hover:bg-slate-800 transition-colors group"
+              >
+                <div className="w-14 h-14 rounded-lg bg-indigo-500/20 flex items-center justify-center mb-6 group-hover:bg-indigo-500/30 transition-colors">
+                  <Icon className="w-7 h-7 text-indigo-400" />
+                </div>
+                <h3 className="text-xl font-heading font-bold mb-3">
+                  {reason.title}
+                </h3>
+                <p className="text-slate-400 leading-relaxed">
+                  {reason.description}
+                </p>
               </div>
-              <h3 className="text-xl font-heading font-bold text-slate-900 mb-3">
-                {reason.title}
-              </h3>
-              <p className="text-slate-600 leading-relaxed">
-                {reason.description}
-              </p>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
@@ -70,7 +63,3 @@ const WhyUs = () => {
 };
 
 export default WhyUs;
-
-
-
-
